@@ -1,5 +1,5 @@
 # RPGemJava
-
+Colaboradores: Maria Eduarda Zampieron e Felipe Fernandes Bortolino (PjBL 6, Cibersegurança 2025)
 ## Descrição do Projeto
 O projeto consiste em um RPG em turnos desenvolvido totalmente em Java, no qual o jogador (usuário) controla personagens que enfrentam inimigos em batalhas estratégicas, alternando entre ataques do jogador e do inimigo.
 ## Contexto
