@@ -9,16 +9,33 @@ A ideia surgiu com o objetivo de aplicar os principais conceitos de Programaçã
 O sistema contará com uma interface gráfica, leitura e gravação de arquivos, além de salvar o progresso do jogo. O projeto também terá múltiplas classes e métodos, incluindo personagens, itens, batalhas e gerenciamento de turnos.
 ## » Estrutura
 ```
-src/
-├── Main.java                // Ponto de entrada do jogo
-├── Personagem.java          // Classe base para personagens
-├── Heroi.java               // Classe do herói/jogador
-├── Inimigo.java             // Classe base para inimigos
-├── Goblin.java              // Inimigo específico
-├── CavaleiroNegro.java      // Inimigo específico (boss)
-├── Dado.java                // Sistema de dados
-├── Combate.java             // Sistema de combate por turnos
-├── Item.java                // Itens do jogo
-├── Historia.java            // Narrativa e diálogos
-├── Util.java                // Utilitários e funções auxiliares
+RPG/
+├── Main.java                      // Classe principal
+├── Game.java                      // Controla a lógica geral do jogo
+├── interface/
+│   └── GameUI.java                // Interface gráfica do jogo
+├── personagem/
+│   ├── Personagem.java            // Classe abstrata base
+│   ├── Guerreiro.java             // Subclasse concreta
+│   ├── Mago.java                  // Subclasse concreta
+│   └── InvalidoException.java     // Exceção personalizada
+├── mundo/
+│   ├── Local.java                 // Representa um lugar no jogo
+│   ├── Cidade.java                // Subclasse de Local
+│   └── Floresta.java             // Subclasse de Local
+├── combate/
+│   ├── Inimigo.java               // Representa inimigos
+│   └── Combate.java               // Controla batalhas
+├── item/
+│   ├── Item.java                  // Representa um item
+│   └── Inventario.java            // Armazena itens
+├── dados/
+│   ├── LeitorDados.java           // Lê personagens e mapas de CSV
+│   └── GravadorDados.java         // Salva progresso em arquivo
+
+```
+## » Como compilar
+```
+javac */*.java *.java
+java Main
 ```
